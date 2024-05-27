@@ -1,0 +1,490 @@
+{
+
+"systemEnv": {
+
+"openapiPrefix": "fastgpt",
+
+"vectorMaxProcess": 15,
+
+"qaMaxProcess": 15,
+
+"pgHNSWEfSearch": 100
+
+},
+
+"llmModels": [
+
+    {
+      "model": "gpt-3.5-turbo",
+      "name": "gpt-3.5-turbo",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+    {
+      "model": "gemini-pro",
+      "name": "gemini-pro",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+        {
+      "model": "讯飞星火v3.5",
+      "name": "讯飞星火v3.5",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "讯飞星火v3.1",
+      "name": "讯飞星火v3.1",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "通义千问-plus",
+      "name": "通义千问-plus",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "glm-4",
+      "name": "智谱清言-glm-4",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "glm-3-turbo",
+      "name": "智谱清言-glm-3-turbo",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "腾讯混元",
+      "name": "腾讯混元",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "百度ERNIE-Speed-128K",
+      "name": "百度文心ERNIE-Speed-128K",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+     {
+      "model": "百度ERNIE-Lite-8K-0922",
+      "name": "百度文心ERNIE-Lite-8K-0922",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 16000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+    {
+      
+      "model": "gpt-4o",
+      "name": "gpt-4o",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 125000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": false,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+      {
+      "model": "gpt-4-turbo-preview(copilot)",
+      "name": "gpt-4-turbo(copilot)",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 125000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": false,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "usedInQueryExtension": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+    {
+      "model": "gpt-4-vision-preview(copilot)",
+      "name": "gpt-4-vision(copilot)",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 128000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": false,
+      "usedInClassify": false,
+      "usedInExtractFields": false,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+    {
+      "model": "gemini-pro-vision",
+      "name": "gemini-pro-vision",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 128000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": false,
+      "usedInClassify": false,
+      "usedInExtractFields": false,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    },
+    {
+      "model": "智谱glm-4-vision",
+      "name": "智谱glm-4-vision",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 128000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": false,
+      "usedInClassify": false,
+      "usedInExtractFields": false,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig":{}
+    }
+],
+
+"vectorModels": [
+    {
+      "model": "m3e",
+      "name": "M3E（测试使用）",
+"avatar": "/imgs/model/openai.svg",
+
+"charsPointsPrice": 0,
+
+"defaultToken": 700,
+
+"maxToken": 3000,
+
+"weight": 100
+    },
+      {
+      "model": "text-embedding-3-small",
+      "name": "Embedding-3",
+      "avatar": "/imgs/model/openai.svg",
+      "charsPointsPrice": 0,
+      "defaultToken": 700,
+      "maxToken": 3000,
+      "weight": 100,
+      "defaultConfig":{},
+      "dbConfig": {},
+      "queryConfig": {} 
+    }
+],
+"reRankModels": [
+  {
+    "model": "bge-reranker-base", 
+    "name": "检索重排-base", 
+    "charsPointsPrice": 0,
+    "requestUrl": "https://mistpe-w0ckh0-rerank.hf.space/v1/rerank",
+    "requestAuth": "sk-aaabbbcccdddeeefffggghhhiiijjjkkk"
+  }
+  ],
+
+"audioSpeechModels": [
+
+{
+
+"model": "tts-1",
+
+"name": "OpenAI TTS1",
+
+"charsPointsPrice": 0,
+
+"voices": [
+
+{
+
+"label": "Alloy",
+
+"value": "alloy",
+
+"bufferId": "openai-Alloy"
+
+},
+
+{
+
+"label": "Echo",
+
+"value": "echo",
+
+"bufferId": "openai-Echo"
+
+},
+
+{
+
+"label": "Fable",
+
+"value": "fable",
+
+"bufferId": "openai-Fable"
+
+},
+
+{
+
+"label": "Onyx",
+
+"value": "onyx",
+
+"bufferId": "openai-Onyx"
+
+},
+
+{
+
+"label": "Nova",
+
+"value": "nova",
+
+"bufferId": "openai-Nova"
+
+},
+
+{
+
+"label": "Shimmer",
+
+"value": "shimmer",
+
+"bufferId": "openai-Shimmer"
+
+}
+
+]
+
+}
+
+],
+
+"whisperModel": {
+
+"model": "whisper-1",
+
+"name": "Whisper1",
+
+"charsPointsPrice": 0
+
+}
+
+}
